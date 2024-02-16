@@ -12,23 +12,23 @@ Content-Type: application/json
 ###
 
 # Alterar Pokémon
-PUT {{baseUrl}}/pokemons/7
+PUT {{baseUrl}}/pokemons/8
 Content-Type: application/json
 
 {
-    "tipo": "mewtwo"
+    "treinador": "mewtwo"
 }
 
 ###
 
 # Deletar Pokémon
-DELETE {{baseUrl}}/pokemons/7
+DELETE {{baseUrl}}/pokemons/8
 Content-Type: application/json
 
 ###
 
 # Carregar Pokémon pelo ID
-GET {{baseUrl}}/pokemons/6
+GET {{baseUrl}}/pokemons/1
 Content-Type: application/json
 
 ###
