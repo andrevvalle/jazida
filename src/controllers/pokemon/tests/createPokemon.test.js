@@ -1,4 +1,3 @@
-const { before, after } = require('lodash');
 const { createPokemon } = require('../../../controllers/pokemon');
 const Pokemon = require('../../../models/pokemon');
 
