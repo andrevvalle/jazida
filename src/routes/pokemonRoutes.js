@@ -5,11 +5,11 @@ const {
     createPokemon,
     updatePokemon,
     deletePokemon,
-    getPokemon,
+    getPokemonById,
     getAllPokemons,
     getAllPokemonsWithFilter,
     makeBattlePokemons
-} = require('../controllers/pokemonController');
+} = require('../controllers/pokemon');
 
 router.post('/pokemons', createPokemon);
 router.post('/batalhar/:id1/:id2', makeBattlePokemons);
@@ -17,7 +17,7 @@ router.put('/pokemons/:id', updatePokemon);
 
 router.delete('/pokemons/:id', deletePokemon);
 
-router.get('/pokemons/:id', getPokemon);
+router.get('/pokemons/:id', getPokemonById);
 router.get('/pokemons', getAllPokemons);
 router.get('/pokemonsWithFilter', getAllPokemonsWithFilter);
 

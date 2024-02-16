@@ -12,7 +12,7 @@ Content-Type: application/json
 ###
 
 # Alterar Pokémon
-PUT {{baseUrl}}/pokemons/4
+PUT {{baseUrl}}/pokemons/7
 Content-Type: application/json
 
 {
@@ -22,7 +22,7 @@ Content-Type: application/json
 ###
 
 # Deletar Pokémon
-DELETE {{baseUrl}}/pokemons/4
+DELETE {{baseUrl}}/pokemons/7
 Content-Type: application/json
 
 ###
@@ -40,7 +40,7 @@ Content-Type: application/json
 ###
 
 # Listar Pokémons com Filtro
-GET {{baseUrl}}/pokemonsWithFilter?perPage=1&page=1
+GET {{baseUrl}}/pokemonsWithFilter?perPage=2&page=1
 Content-Type: application/json
 
 ###

@@ -1,5 +1,5 @@
-const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = new Sequelize('postgres://user:password@db:5432/pokemondb');
+const { DataTypes } = require('sequelize');
+const { sequelize } = require('../config/database')
 
 const Pokemon = sequelize.define('Pokemon', {
   tipo: {

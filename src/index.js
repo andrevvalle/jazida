@@ -30,3 +30,5 @@ app.listen(PORT, async () => {
   await assertDatabaseConnectionOk();
   console.log(`Servidor rodando na porta ${PORT}`);
 });
+
+module.exports = app;
