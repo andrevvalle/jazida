@@ -1,0 +1,50 @@
+@baseUrl = http://localhost:3000
+
+# Criar Pokémon
+POST {{baseUrl}}/pokemons
+Content-Type: application/json
+
+{
+    "tipo": "charizard",
+    "treinador": "Ash Ketchum"
+}
+
+###
+
+# Alterar Pokémon
+PUT {{baseUrl}}/pokemons/4
+Content-Type: application/json
+
+{
+    "tipo": "mewtwo"
+}
+
+###
+
+# Deletar Pokémon
+DELETE {{baseUrl}}/pokemons/4
+Content-Type: application/json
+
+###
+
+# Carregar Pokémon pelo ID
+GET {{baseUrl}}/pokemons/6
+Content-Type: application/json
+
+###
+
+# Listar Pokémons
+GET {{baseUrl}}/pokemons
+Content-Type: application/json
+
+###
+
+# Listar Pokémons com Filtro
+GET {{baseUrl}}/pokemonsWithFilter?perPage=1&page=1
+Content-Type: application/json
+
+###
+
+# Iniciar uma Batalha
+POST {{baseUrl}}/batalhar/1/2
+Content-Type: application/json
